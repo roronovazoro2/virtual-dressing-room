@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Dressing Room</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Virtual Dressing Room</h1>
+
+    <div id="upload-section">
+        <h2>Upload Your Photo</h2>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" name="file" id="file-input" accept="image/*">
+            <button type="submit">Upload</button>
+        </form>
+        <div id="uploaded-image"></div>
+    </div>
+
+    <div id="webcam-section">
+        <h2>Try On Outfits in Real-Time</h2>
+        <img id="webcam-feed" src="/video_feed" alt="Webcam Feed">
+    </div>
+
+    <div id="outfit-selection">
+        <h2>Select Your Outfit</h2>
+        <label for="outfit-type">Type:</label>
+        <select id="outfit-type">
+            <option value="tshirt">T-Shirt</option>
+            <option value="jacket">Jacket</option>
+            <option value="pants">Pants</option>
+        </select>
+
+        <label for="outfit-size">Size:</label>
+        <select id="outfit-size">
+            <option value="S">Small</option>
+            <option value="M" selected>Medium</option>
+            <option value="L">Large</option>
+        </select>
+
+        <label for="outfit-color">Color:</label>
+        <input type="color" id="outfit-color" value="#ffffff">
+
+        <button id="apply-outfit">Apply Outfit</button>
+    </div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>

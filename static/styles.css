@@ -1,0 +1,68 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+/* Section styles */
+#upload-section, #webcam-section, #outfit-selection {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form and button styles */
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Image and video styles */
+#uploaded-image img, #webcam-feed {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Input and select styles */
+input[type="file"], select, input[type="color"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
